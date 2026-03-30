@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - EduNest</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="top-bar">
+        <div class="top-left">
+            <span>📱 +353 1 555 0122</span>
+            <span>✉️ support@edunest.ie</span>
+        </div>
+        <div class="top-right">
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+
+    <!-- MAIN HEADER -->
+    <header class="header">
+        <nav class="nav">
+
+            <!-- LEFT MENU -->
+            <ul class="nav-left">
+                <li><a href="/">Home</a></li>
+                <li><a href="/#features">Features</a></li>
+                <li><a href="/#students">Students</a></li>
+                <li><a href="/#parents">Parents</a></li>
+            </ul>
+
+            <!-- LOGO CENTER -->
+            <div class="logo"><a href="/">EduNest</a></div>
+
+            <!-- RIGHT MENU -->
+            <ul class="nav-right">
+                <li><a href="/#teachers">Teachers</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="javascript:void(0)" class="btn-primary" onclick="openModal()">Get Started</a></li>
+            </ul>
+
+            <!-- MOBILE MENU ICON -->
+            <div class="menu-toggle" id="menuToggle">☰</div>
+
+        </nav>
+    </header>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="/">Home</a>
+        <a href="/#features">Features</a>
+        <a href="/#students">Students</a>
+        <a href="/#parents">Parents</a>
+        <a href="/#teachers">Teachers</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+        <a href="#" class="btn-primary">Get Started</a>
+    </div>
+    <section class="contact-hero">
+        <h1>Let’s Talk 👋</h1>
+        <p>Have questions? We’re here to help you grow smarter.</p>
+    </section>
+
+    <section class="contact-main">
+
+        <!-- LEFT SIDE -->
+        <div class="contact-left">
+
+            <!-- CHAT CARD -->
+            <div class="chat-card">
+                <h3>💬 Quick Help</h3>
+                <p>Usually replies within minutes</p>
+                <button class="live-btn">Start Live Chat</button>
+                <div id="toastMsg" class="toast-msg">
+                    ⚠️ Please login first, then you can start chat.
+                </div>
+            </div>
+
+
+            <!-- INFO -->
+            <div class="info-card">
+                <h4>📧 Email</h4>
+                <p>support@edunest.ie</p>
+            </div>
+
+            <div class="info-card">
+                <h4>📍 Location</h4>
+                <p>EduNest Learning Ltd.
+                    12 Pearse Street
+                    Dublin 2, D02 F992
+                    Ireland</p>
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="contact-right">
+
+            <form id="contactForm">
+
+                <div class="input-group">
+                    <input type="text" required>
+                    <label>Your Name</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" required>
+                    <label>Your Email</label>
+                </div>
+
+                <div class="input-group">
+                    <textarea rows="4" required></textarea>
+                    <label>Your Message</label>
+                </div>
+
+                <button type="submit" class="btn-submit">
+                    Send Message
+                </button>
+
+                <p class="success-msg">✅ Message sent successfully!</p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- MAP -->
+    <section class="map-section">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3556602.428380062!2d-13.500493834853193!3d53.27316102731664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e85c619870b%3A0x3523510470bb0f7!2sEducation%20State!5e1!3m2!1sen!2sin!4v1774634293550!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- BRAND -->
+            <div class="footer-col brand">
+                <h3>EduNest</h3>
+                <p>
+                    Empowering students, parents, and teachers with smarter learning tools.
+                </p>
+
+            </div>
+
+            <!-- EDU NEST -->
+
+            <!-- PRODUCT -->
+            <div class="footer-col">
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="/#features">Features</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <!-- <li><a href="contact.html">Demo</a></li> -->
+                </ul>
+            </div>
+
+            <!-- RESOURCES -->
+            <div class="footer-col">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="/#students">Students</a></li>
+                    <li><a href="/#parents">Parents</a></li>
+                    <li><a href="/#teachers">Teachers</a></li>
+                    <!-- <li><a href="#">FAQs</a></li> -->
+                </ul>
+            </div>
+
+            <!-- LEGAL -->
+            <div class="footer-col">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="contact.html">Help Center</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <!-- <li><a href="#">FAQs</a></li> -->
+                </ul>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li>Email: support@edunest.ie</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- BOTTOM -->
+        <div class="footer-bottom">
+            © 2026 EduNest. All rights reserved.
+        </div>
+
+    </footer>
+    <div class="modal" id="demoModal">
+
+        <div class="modal-content" id="modalBox">
+
+            <span class="close" onclick="closeModal()">&times;</span>
+
+            <h2>Request a Demo</h2>
+
+            <form id="demoForm">
+
+                <input type="text" id="name" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+                <input type="phone" id="phone" maxlength="10" placeholder="Phone Number" required>
+                <input type="message" id="message" placeholder="Message" required>
+                <p class="" id="formError"></p>
+                <button type="submit">Submit Request</button>
+
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        const contacform = document.getElementById("contactForm");
+        const successMsg = document.querySelector(".success-msg");
+
+        contacform.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            // show message
+            successMsg.style.display = "block";
+
+            // reset form
+            form.reset();
+
+            // hide after 3s
+            setTimeout(() => {
+                successMsg.style.display = "none";
+            }, 6000);
+        });
+        document.getElementById("phone").addEventListener("input", function () {
+            this.value = this.value.replace(/[^0-9]/g, "");
+        });
+
+    </script>
+</body>
+
+</html>
